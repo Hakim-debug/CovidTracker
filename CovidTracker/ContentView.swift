@@ -9,8 +9,32 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject private var trackingListVM = TrackingListViewModel()
+    
+    init(){
+        self.trackingListVM.getTrackingData()
+    }
+//    The display view7
     var body: some View {
-        Text("Hello, World!")
+        NavigationView {
+            
+            List(self.trackingListVM.trackings, id: \.id ){
+                
+                tracking in
+                
+                HStack {
+                    Text(tracking.state)
+                    .padding()
+                        .foregroundColor(Color.white)
+                        .background(Color.purple)
+                }
+                
+            }
+            
+            .navigationBarTitle("Covid19 Tracker")
+            
+        }
     }
 }
 
