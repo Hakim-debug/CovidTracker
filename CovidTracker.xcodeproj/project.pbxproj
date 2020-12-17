@@ -20,6 +20,7 @@
 		FD52F874258A62610086FA57 /* Tracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52F873258A62610086FA57 /* Tracking.swift */; };
 		FD52F876258A73620086FA57 /* TrackingListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52F875258A73620086FA57 /* TrackingListViewModel.swift */; };
 		FD52F878258A747E0086FA57 /* TrackingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD52F877258A747E0086FA57 /* TrackingViewModel.swift */; };
+		FD8F8F4C258BAA6D00291F81 /* SearchCases.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8F8F4B258BAA6D00291F81 /* SearchCases.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		FD52F873258A62610086FA57 /* Tracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tracking.swift; sourceTree = "<group>"; };
 		FD52F875258A73620086FA57 /* TrackingListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingListViewModel.swift; sourceTree = "<group>"; };
 		FD52F877258A747E0086FA57 /* TrackingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingViewModel.swift; sourceTree = "<group>"; };
+		FD8F8F4B258BAA6D00291F81 /* SearchCases.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCases.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,18 +111,14 @@
 		FD52F83D258A60B60086FA57 /* CovidTracker */ = {
 			isa = PBXGroup;
 			children = (
-				FD52F83E258A60B60086FA57 /* AppDelegate.swift */,
-				FD52F840258A60B60086FA57 /* SceneDelegate.swift */,
-				FD52F845258A60B60086FA57 /* ContentView.swift */,
+				FD52F87B258AD2D30086FA57 /* ViewControllers */,
 				FD52F847258A60B80086FA57 /* Assets.xcassets */,
 				FD52F84C258A60B80086FA57 /* LaunchScreen.storyboard */,
 				FD52F84F258A60B80086FA57 /* Info.plist */,
 				FD52F842258A60B60086FA57 /* CovidTracker.xcdatamodeld */,
 				FD52F849258A60B80086FA57 /* Preview Content */,
-				FD52F871258A61010086FA57 /* webbservice.swift */,
-				FD52F873258A62610086FA57 /* Tracking.swift */,
-				FD52F875258A73620086FA57 /* TrackingListViewModel.swift */,
-				FD52F877258A747E0086FA57 /* TrackingViewModel.swift */,
+				FD52F87A258AD29E0086FA57 /* ApiData */,
+				FD52F879258AD24D0086FA57 /* TrackingData */,
 			);
 			path = CovidTracker;
 			sourceTree = "<group>";
@@ -149,6 +147,43 @@
 				FD52F865258A60B80086FA57 /* Info.plist */,
 			);
 			path = CovidTrackerUITests;
+			sourceTree = "<group>";
+		};
+		FD52F879258AD24D0086FA57 /* TrackingData */ = {
+			isa = PBXGroup;
+			children = (
+				FD52F877258A747E0086FA57 /* TrackingViewModel.swift */,
+				FD52F873258A62610086FA57 /* Tracking.swift */,
+				FD52F875258A73620086FA57 /* TrackingListViewModel.swift */,
+			);
+			path = TrackingData;
+			sourceTree = "<group>";
+		};
+		FD52F87A258AD29E0086FA57 /* ApiData */ = {
+			isa = PBXGroup;
+			children = (
+				FD52F871258A61010086FA57 /* webbservice.swift */,
+			);
+			path = ApiData;
+			sourceTree = "<group>";
+		};
+		FD52F87B258AD2D30086FA57 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FD52F845258A60B60086FA57 /* ContentView.swift */,
+				FD52F840258A60B60086FA57 /* SceneDelegate.swift */,
+				FD52F83E258A60B60086FA57 /* AppDelegate.swift */,
+				FD8F8F4A258BA9AF00291F81 /* ViewModel */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FD8F8F4A258BA9AF00291F81 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD8F8F4B258BAA6D00291F81 /* SearchCases.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,6 +319,7 @@
 			files = (
 				FD52F876258A73620086FA57 /* TrackingListViewModel.swift in Sources */,
 				FD52F878258A747E0086FA57 /* TrackingViewModel.swift in Sources */,
+				FD8F8F4C258BAA6D00291F81 /* SearchCases.swift in Sources */,
 				FD52F874258A62610086FA57 /* Tracking.swift in Sources */,
 				FD52F83F258A60B60086FA57 /* AppDelegate.swift in Sources */,
 				FD52F844258A60B60086FA57 /* CovidTracker.xcdatamodeld in Sources */,
