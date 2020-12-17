@@ -17,6 +17,8 @@ struct ContentView: View {
     }
 //    The display view7
     var body: some View {
+        
+        
         NavigationView {
             
             List(self.trackingListVM.trackings, id: \.id ){
@@ -27,12 +29,34 @@ struct ContentView: View {
                     Text(tracking.state)
                     .padding()
                         .foregroundColor(Color.white)
-                        .background(Color.purple)
+                        .background(Color.blue)
+                    .clipShape(Circle())
+//                        .font(fontfamily:sant)
+                    Spacer()
+                    VStack{
+                       Text(" Total infected : 🦠 \(tracking.total)")
+                    }
+                    
+                    VStack{
+                        
+                        Text(" Last Updated : \(tracking.date)")
+                        
+                        HStack{
+                            Text("☠️ \(tracking.death)")
+                            Text(" 🏥 \(tracking.hospitalized)")
+                             Text("  📈 \(tracking.positive)")
+                        }
+                        
+                    }
+                    Spacer()
+                    
+                    
                 }
                 
             }
             
             .navigationBarTitle("Covid19 Tracker")
+        
             
         }
     }
